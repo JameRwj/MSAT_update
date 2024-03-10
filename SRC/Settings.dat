@@ -1,0 +1,9 @@
+3           Reconstruction_Method: 1-MUSCL; 2-ROUND
+2           Reconstruction_Variables: 1-Primitive Variables; 2-Characteristic Variables
+3           Limiter (works only when Reconstruction_Method = 1): 0-No limiter(First order); 1-Superbee limiter; 2-van Leer limiter; 3-van Albada limiter; 4-minmod limiter; 5-limiter of Deng Xi
+1           Riemann solver: 1-Roe solver; 2-HLLC solver; 3-HLL solver; 4-van Leer solver; 5-AUSMplus solver; 6-SLAU solver; 7-HLLE solver; 8-HLLEM solver
+1           TestCase: 1-2D normal shock; 2-other test case
+0.1         Shock position:0~1
+20          Mach number
+2           Initialization method: 1-by Rankine-Hugoniot conditions; 2-by 1D computation
+40000       Steps of 1D computation (works only when Initialization method = 2)
