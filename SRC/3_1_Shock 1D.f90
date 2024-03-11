@@ -55,11 +55,7 @@
     !*the modification is used, since the shock instability will also occour in the 1D computation*
     !*in such conditions.**************************************************************************
     IF (Riemann_Solver == 1 .OR. Riemann_Solver == 7 .OR. Riemann_Solver == 8) THEN
-        IF (epsilon < 0.4_p2) THEN
-            factor = 1
-        ELSE
-            factor = 0
-        END IF
+        factor = 1
     ELSE
         factor = 0
     END IF
